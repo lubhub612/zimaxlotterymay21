@@ -778,7 +778,7 @@ export default function DefiLottery() {
         if (waitForTx) {
         toast.success("You claim reward ");
         } 
-         console.log('wait claim ZIMAX', waitForTx);
+         
 
       } else {
         toast.info("You already claimed the Reward");
@@ -873,7 +873,7 @@ export default function DefiLottery() {
       );
       let waitForTx = await _approve.wait();
       if (waitForTx) {
-        console.log('wait handleApproveZIMAX', waitForTx);
+   
         setButtonStatus('buy');
         toast.success('Approved successfull.');
         let array=[];
@@ -911,7 +911,7 @@ export default function DefiLottery() {
       } else {
         toast.error('execution reverted: Lottery is over');
       }  
-      console.log('wait stakeZIMAX', waitForTx);
+      
       
     } catch (error) {
       toast.error('execution reverted: Lottery is over');
